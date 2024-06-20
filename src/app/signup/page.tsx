@@ -2,14 +2,15 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-import { dashboardRoutes } from "@/utils/routes";
 import { fonts } from "@/utils/constants";
 import mobile from "../../assets/logo/mobile.svg";
 import { colors } from "@/utils/color-scheme";
 import logo from "../../assets/logo/logo.svg";
+import { dashboardRoutes } from "@/utils/routes";
 
-const Login = () => {
+const Signup = () => {
   const router = useRouter();
+
   return (
     <div
       className={`flex w-full h-screen bg-white font-[${fonts.primaryFont}]`}
@@ -25,7 +26,7 @@ const Login = () => {
             tomorrow or by location
           </span>
         </div>
-        <Image src={mobile} alt="login" />
+        <Image src={mobile} alt="Signup" />
       </div>
       <div className="flex gap-4 items-center justify-center w-full">
         <form>
@@ -38,6 +39,18 @@ const Login = () => {
               className="my-6"
             />
             {/* <span className="text-2xl my-6 font-semibold ">Create Account</span> */}
+            <div className="flex flex-col gap-1 p-1 items-start">
+              <p className="w-32 text-sm font-medium text-black">
+                <span>Name</span>
+              </p>
+              <div className="w-full flex flex-col">
+                <input
+                  type="text"
+                  placeholder="Enter your Name"
+                  className="w-96 h-12 px-2 border rounded outline-none border-gray-500"
+                />
+              </div>
+            </div>
             <div className="flex flex-col gap-1 p-1 items-start">
               <p className="w-32 text-sm font-medium text-black">
                 <span>Email</span>
@@ -66,7 +79,7 @@ const Login = () => {
               onClick={() => router.push(dashboardRoutes.dashboard)}
               className={`flex p-3 w-full mt-2 h-12 hover:shadow-md cursor-pointer rounded justify-center bg-[${colors.primary}]`}
             >
-              <span className="text-sm font-medium text-center">Login</span>
+              <span className="text-sm font-medium text-center">Register</span>
             </div>
           </div>
         </form>
@@ -75,4 +88,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
