@@ -1,7 +1,6 @@
 import { FEATURES } from "@/utils/constants";
 import Image from "next/image";
 import clsx from "clsx";
-import { colors } from "@/utils/color-scheme";
 
 const FeatureSection = () => {
   return (
@@ -15,17 +14,17 @@ const FeatureSection = () => {
             <div key={feature.icon} className="flex gap-4 justify-between">
               <div
                 className={clsx(
-                  `rounded-full p-4 flex items-center w-max h-max`,
+                  "rounded-full p-4 flex items-center w-max h-max",
                   feature.Heading === "Keep Safe and Private"
-                    ? `bg-[${colors.iconColor}]`
-                    : `bg-[${colors.primary}]`
+                    ? "bg-iconColor"
+                    : "bg-primary"
                 )}
               >
                 <Image src={feature.icon} alt="icons" height={18} width={18} />
               </div>
               <div className="flex flex-col gap-2">
-                <span className="text-sm font-medium">{feature.Heading}</span>
-                <span className="text-sm flex-wrap break-words">
+                <span className="font-medium">{feature.Heading}</span>
+                <span className="flex-wrap text-sm break-words">
                   {feature.desc}
                 </span>
               </div>

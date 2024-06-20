@@ -1,7 +1,6 @@
 import Image from "next/image";
 import chatImage from "../../assets/logo/chatImage.svg";
 import Link from "next/link";
-import { colors } from "@/utils/color-scheme";
 import { authRoutes } from "@/utils/routes";
 
 const ChatSection = () => {
@@ -13,20 +12,20 @@ const ChatSection = () => {
           <span className="text-3xl font-semibold">inside conversations</span>
         </div>
         <div className="flex flex-col gap-1">
-          <span className="flex-wrap mt-6 text-sm">
+          <span className="flex-wrap mt-6">
             There are many variations of passages of Lorem Ipsum available,
           </span>
-          <span className="flex-wrap text-sm">
+          <span className="flex-wrap">
             but the majority have suffered all injected humour or randomised
           </span>
-          <span className="flex-wrap text-sm">
+          <span className="flex-wrap">
             words which do not look even slightly believable.
           </span>
         </div>
         <div className="mt-6">
           <Link
             href={authRoutes.register}
-            className={`bg-[${colors.primary}] hover:shadow-md text-white cursor-pointer p-3 text-sm rounded font-medium`}
+            className="bg-primary hover:shadow-md text-white cursor-pointer p-3 rounded font-medium"
           >
             Start Chatting Now
           </Link>

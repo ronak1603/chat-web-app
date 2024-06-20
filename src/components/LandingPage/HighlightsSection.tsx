@@ -1,12 +1,11 @@
 import Image from "next/image";
 import headerImage from "../../assets/logo/headerImage.svg";
 import Link from "next/link";
-import { colors } from "@/utils/color-scheme";
 import { authRoutes } from "@/utils/routes";
 
 const HighlightSection = () => {
   return (
-    <div className={`flex justify-between mt-10`}>
+    <div className="flex justify-between mt-10">
       <div className="flex flex-col gap-4 p-20">
         <div className="flex flex-col gap-4">
           <span className="text-3xl font-semibold">Start Chatting with</span>
@@ -16,17 +15,17 @@ const HighlightSection = () => {
           </span>
         </div>
         <div className="flex flex-col gap-1">
-          <span className="flex-wrap mt-6 text-sm">
+          <span className="flex-wrap mt-6">
             Great software that allows you to chat from any
           </span>
-          <span className="flex-wrap text-sm">
+          <span className="flex-wrap">
             place at any time without any interruption.
           </span>
         </div>
         <div className="mt-6">
           <Link
             href={authRoutes.register}
-            className={`bg-[${colors.primary}] hover:shadow-md text-white cursor-pointer p-3 text-sm rounded font-medium`}
+            className="bg-primary hover:shadow-md text-white cursor-pointer p-3 rounded font-medium"
           >
             Start Chatting Now
           </Link>
