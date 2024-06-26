@@ -8,8 +8,7 @@ import { useForm } from "@mantine/form";
 import { dashboardRoutes } from "@/utils/routes";
 import { LoginForm } from "@/types/auth";
 import { validateEmail } from "@/utils/validation";
-import mobile from "../../assets/logo/mobile.svg";
-import logo from "../../assets/logo/logo.svg";
+import logo from "@/assets/logo/logo.svg";
 
 const Signin = () => {
   const router = useRouter();

@@ -7,8 +7,8 @@ import { useForm } from "@mantine/form";
 import { dashboardRoutes } from "@/utils/routes";
 import { validateEmail } from "@/utils/validation";
 import { RegisterForm } from "@/types/auth";
-import logo from "../../assets/logo/logo.svg";
-import google from "../../assets/icons/google.svg";
+import logo from "@/assets/logo/logo.svg";
+import google from "@/assets/icons/google.svg";
 
 const Register = () => {
   const router = useRouter();

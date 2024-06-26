@@ -1,4 +1,4 @@
-import { authRoutes, extraRoutes } from "@/utils/routes";
+import { extraRoutes } from "@/utils/routes";
 import Link from "next/link";
 
 const FooterSection = () => {

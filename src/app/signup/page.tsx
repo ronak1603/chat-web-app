@@ -1,7 +1,7 @@
 import Register from "@/components/Register";
 import Image from "next/image";
 
-import mobile from "../../assets/logo/mobile.svg";
+import mobile from "@/assets/logo/mobile.svg";
 
 const Signup = async () => {
   const response = await fetch("https://api.github.com/users/ronak1603");

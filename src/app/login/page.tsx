@@ -1,6 +1,6 @@
 import Signin from "@/components/Login";
 import Image from "next/image";
-import mobile from "../../assets/logo/mobile.svg";
+import mobile from "@/assets/logo/mobile.svg";
 
 const Login = () => {
   return (
