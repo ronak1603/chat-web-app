@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chatImage from "../../assets/logo/chatImage.svg";
+import chatImage from "@/assets/logo/chatImage.svg";
 import Link from "next/link";
 import { authRoutes } from "@/utils/routes";
 
