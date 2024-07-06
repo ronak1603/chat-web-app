@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import useChatStore from "@/app/store/useChatStore";
+import useChatStore from "@/store/useChatStore";
 import ChatList from "@/components/Dashboard/Chats";
 import ChatWindow from "@/components/Dashboard/ChatWindow";
 import EmptyState from "@/components/Dashboard/EmptyState";
